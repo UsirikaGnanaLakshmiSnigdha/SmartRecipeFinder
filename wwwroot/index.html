@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe Finder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍳 Smart Recipe Finder
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipe.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            
+            <li><a href="favorites.html">Favorites</a></li>
+            <li id="userArea"></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="profile.html"> Profile</a></li>
+        </ul>
+
+        <button class="dark-btn" onclick="toggleDarkMode()">
+            🌙
+        </button>
+
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <div class="hero-overlay">
+
+            <h1>Discover Amazing Recipes</h1>
+
+            <p>
+                Find recipes using ingredients
+                already available in your kitchen.
+            </p>
+
+            <div class="search-container">
+
+                <input type="text" id="ingredients" placeholder="egg,onion,tomato">
+
+                <button onclick="searchRecipes()">
+                    Search
+                </button>
+
+            </div>
+
+            <div id="suggestions" class="suggestions-box">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Popular Tags -->
+
+    <section class="ingredients-section">
+
+        <h2>Popular Ingredients</h2>
+
+        <div class="ingredient-tags">
+
+            <span onclick="addIngredient('egg')">Egg</span>
+            <span onclick="addIngredient('onion')">Onion</span>
+            <span onclick="addIngredient('tomato')">Tomato</span>
+            <span onclick="addIngredient('milk')">Milk</span>
+            <span onclick="addIngredient('rice')">Rice</span>
+            <span onclick="addIngredient('potato')">Potato</span>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <div class="categories">
+
+        <button onclick="filterRecipes('All')">
+            All
+        </button>
+
+        <button onclick="filterRecipes('Breakfast')">
+            Breakfast
+        </button>
+
+        <button onclick="filterRecipes('Lunch')">
+            Lunch
+        </button>
+
+        <button onclick="filterRecipes('Dinner')">
+            Dinner
+        </button>
+
+        <button onclick="filterRecipes('Drinks')">
+            Drinks
+        </button>
+        <button onclick="filterRecipes('Non-Veg')">
+            Non-Veg
+        </button>
+
+        <button onclick="filterRecipes('Seafood')">
+            Seafood
+        </button>
+
+        
+
+    </div>
+
+    <!-- Results -->
+
+    <section class="results-section">
+
+        <h2>Recipes</h2>
+
+        <div id="results" class="recipe-grid">
+
+        </div>
+
+    </section>
+
+    <!-- Modal -->
+
+    <div id="recipeModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close-btn" onclick="closePopup()">
+                ×
+            </span>
+
+            <div id="recipeDetails"></div>
+
+        </div>
+
+    </div>
+    <footer>
+        © 2026 Smart Recipe Finder
+    </footer>
+
+    <script src="js/recipe.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/suggestions.js"></script>
+    <script src="js/favorites.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>

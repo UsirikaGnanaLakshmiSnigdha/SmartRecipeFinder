@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Recipes</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            🍳 Smart Recipe Finder
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="recipe.html">
+                    Recipes
+                </a>
+            </li>
+
+            <li>
+                <a href="favorites.html">
+                    Favorites
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    Login
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Header -->
+
+    <section class="hero-small">
+
+        <h1>
+            Explore Recipes
+        </h1>
+
+        <p>
+            Browse all available recipes
+        </p>
+
+    </section>
+
+    <!-- Category Filters -->
+
+    <div class="filter-container">
+
+        <button onclick="filterCategory('All')">
+            All
+        </button>
+
+        <button onclick="filterCategory('Breakfast')">
+            Breakfast
+        </button>
+
+        <button onclick="filterCategory('Lunch')">
+            Lunch
+        </button>
+
+        <button onclick="filterCategory('Dinner')">
+            Dinner
+        </button>
+
+        <button onclick="filterCategory('Snacks')">
+            Snacks
+        </button>
+
+        <button onclick="filterCategory('Drinks')">
+            Drinks
+        </button>
+
+    </div>
+
+    <!-- Food Type Filters -->
+
+    <div class="filter-container">
+
+        <button onclick="filterFoodType('All')">
+            All
+        </button>
+
+        <button onclick="filterFoodType('Veg')">
+            Veg
+        </button>
+
+        <button onclick="filterFoodType('Non-Veg')">
+            Non-Veg
+        </button>
+
+    </div>
+
+    <!-- Recipes -->
+
+    <div id="results" class="recipe-grid">
+
+    </div>
+
+    <script src="js/recipe.js"></script>
+    <script src="js/favorites.js"></script>
+
+</body>
+
+</html>

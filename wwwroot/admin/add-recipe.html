@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Add Recipe</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div class="admin-form-container">
+
+        <h1>Add Recipe</h1>
+
+        <!-- Recipe Name -->
+
+        <input
+            type="text"
+            id="recipeName"
+            placeholder="Recipe Name">
+
+        <!-- Description -->
+
+        <textarea
+            id="description"
+            placeholder="Recipe Description">
+        </textarea>
+
+        <!-- Cooking Time -->
+
+        <input
+            type="text"
+            id="cookingTime"
+            placeholder="Cooking Time (e.g. 30 mins)">
+
+        <!-- Image Upload -->
+
+        <label>
+            Recipe Image
+        </label>
+
+        <input
+            type="file"
+            id="recipeImage"
+            accept="image/*">
+
+        <!-- Image Preview -->
+
+        <img
+            id="previewImage"
+            style="
+                display:none;
+                width:250px;
+                margin:20px auto;
+                border-radius:12px;
+                box-shadow:0 5px 15px rgba(0,0,0,.2);
+            ">
+
+        <!-- Ingredients -->
+
+        <input
+            type="text"
+            id="ingredients"
+            placeholder="Egg, Onion, Tomato">
+
+        <!-- Instructions -->
+
+        <textarea
+            id="instructions"
+            placeholder="Cooking Instructions">
+        </textarea>
+
+        <!-- Category -->
+
+        <select id="category">
+
+            <option value="Breakfast">
+                Breakfast
+            </option>
+
+            <option value="Lunch">
+                Lunch
+            </option>
+
+            <option value="Dinner">
+                Dinner
+            </option>
+
+            <option value="Snacks">
+                Snacks
+            </option>
+
+            <option value="Drinks">
+                Drinks
+            </option>
+
+        </select>
+
+        <!-- Food Type -->
+
+        <select id="foodType">
+
+            <option value="Veg">
+                Veg
+            </option>
+
+            <option value="Non-Veg">
+                Non-Veg
+            </option>
+
+        </select>
+
+        <!-- Submit Button -->
+
+        <button onclick="addRecipe()">
+            Add Recipe
+        </button>
+
+        <br><br>
+
+        <a href="dashboard.html">
+            ← Back To Dashboard
+        </a>
+
+    </div>
+
+    <!-- Admin Protection -->
+
+    <script src="../js/admin-auth.js"></script>
+
+    <!-- Add Recipe Logic -->
+
+    <script src="add-recipe.js"></script>
+
+</body>
+
+</html>

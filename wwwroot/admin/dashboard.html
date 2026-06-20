@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<div class="admin-container">
+
+    <h1>Admin Dashboard</h1>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3>Total Recipes</h3>
+            <h2 id="totalRecipes">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Users</h3>
+            <h2 id="totalUsers">0</h2>
+        </div>
+
+        <div class="stat-card">
+            <h3>Total Favorites</h3>
+            <h2 id="totalFavorites">0</h2>
+        </div>
+
+    </div>
+
+    <div class="admin-cards">
+
+        <div class="admin-card">
+            <h2>Add Recipe</h2>
+            <a href="add-recipe.html">Open</a>
+        </div>
+
+        <div class="admin-card">
+            <h2>Manage Recipes</h2>
+            <a href="manage-recipes.html">Open</a>
+        </div>
+
+        <div class="admin-card">
+            <h2>Logout</h2>
+            <button onclick="logoutUser()">
+                Logout
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/auth.js"></script>
+<script src="../js/admin-auth.js"></script>
+<script src="dashboard.js"></script>
+
+</html>

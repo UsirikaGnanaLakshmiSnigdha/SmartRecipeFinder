@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Recipe</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="admin-form-container">
+
+    <h1>Edit Recipe</h1>
+
+    <input
+        type="text"
+        id="recipeName"
+        placeholder="Recipe Name">
+
+    <textarea
+        id="description"
+        placeholder="Description">
+    </textarea>
+
+    <input
+        type="text"
+        id="cookingTime"
+        placeholder="Cooking Time">
+
+    <input
+        type="text"
+        id="imageUrl"
+        placeholder="/images/recipe.jpg">
+
+    <input
+        type="text"
+        id="ingredients"
+        placeholder="Ingredients">
+
+    <textarea
+        id="instructions"
+        placeholder="Instructions">
+    </textarea>
+
+    <button onclick="updateRecipe()">
+        Update Recipe
+    </button>
+
+</div>
+
+<script src="edit-recipe.js"></script>
+
+<script src="../js/admin-auth.js"></script>
+
+</body>
+
+</html>
